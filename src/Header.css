@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  top: 0;
+  height: 3.75rem;
+  background: #2c3138;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.header-icons {
+  display: flex;
+  height: 3.75rem;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.user-icon {
+  width: 1.563rem;
+  color: #ffffff;
+  transition: color, transform 500ms ease;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.cartIcon {
+  width: 1.563rem;
+  color: #ffffff;
+  transition: color, transform 500ms ease;
+  cursor: pointer;
+}
+.cartCounter {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: tomato;
+}
+
+.cart-user-icons {
+  margin-top: 1.5rem;
+  margin-right: 25rem;
+}
+
+.homeLink {
+  margin-right: auto;
+  margin-left: 10rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header-icon:hover,
+.header-icon.active {
+  color: #c1d7f5;
+  transform: scale(1.3);
+}
+
+/* Media queries for responsive design */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+  .homeLink {
+    margin-left: 5rem;
+  }
+
+  .cart-user-icons {
+    margin-right: 10rem;
+  }
+}
+
+/* For screens smaller than 576px */
+@media only screen and (max-width: 575px) {
+  .homeLink {
+    font-size: 3rem;
+  }
+
+  .cart-user-icons {
+    margin-right: 5rem;
+  }
+}

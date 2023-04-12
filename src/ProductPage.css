@@ -1,0 +1,229 @@
+/* .product-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2.5rem 40.625rem;
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+.name-manufacturer {
+  grid-area: 1 / 1 / 2 / 3;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.prod-image {
+  grid-area: 2 / 1 / 4 / 3;
+  width: 28.125rem;
+  height: 37.5rem;
+}
+.prod-color-size {
+  grid-area: 1 / 2 / 2 / 4;
+  margin-top: 15rem;
+  margin-left: 10rem;
+}
+.prod-price {
+  font-weight: 700;
+}
+
+.text-info {
+  font-weight: 700;
+}
+.price-add-to-cart {
+  font-size: 1.563rem;
+  grid-area: 1 / 3 / 2 / 5;
+  margin-top: 15rem;
+  margin-left: 10rem;
+}
+.description {
+  margin-left: 15rem;
+  margin-right: 28rem;
+  font-size: 1.25rem;
+}
+.text-description {
+  font-weight: 700;
+  margin-left: 15rem;
+}
+
+.add-to-cart-page {
+  background-color: #111827;
+  margin-top: 1rem;
+
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.5s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.add-to-cart-page:hover {
+  background-color: #374151;
+}
+
+.add-to-cart-page:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (max-width: 48) {
+  .add-to-cart-page {
+    padding: 0.75rem 1.5rem;
+  }
+} */
+.product-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-rows: 2.5rem 42.625rem;
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  margin-left: 15rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+.name-manufacturer {
+  grid-area: 1 / 1 / 2 / 3;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.prod-image {
+  grid-area: 2 / 1 / 4 / 3;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.prod-color-size {
+  grid-area: 1 / 3 / 2 / 5;
+  margin-top: 15rem;
+  margin-left: 10rem;
+  max-width: 3rem;
+}
+
+.prod-price {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.text-info {
+  font-weight: 700;
+}
+
+.price-add-to-cart {
+  text-align: center;
+  font-size: 1.563rem;
+  grid-area: 1 / 4 / 2 / 6;
+  margin-top: 15rem;
+  max-width: 15rem;
+  height: 7rem;
+  padding: 0.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  width: 70%;
+  margin-left: 15rem;
+  margin-right: 25rem;
+}
+
+.text-description {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-left: 15rem;
+  margin-right: 5rem;
+}
+
+.add-to-cart-page {
+  background-color: #111827;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.5s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.add-to-cart-page:hover {
+  background-color: #374151;
+}
+
+.add-to-cart-page:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (max-width: 48rem) {
+  .product-card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .prod-image {
+    order: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .name-manufacturer {
+    order: 2;
+  }
+
+  .prod-color-size {
+    order: 3;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .text-info,
+  .price-add-to-cart {
+    order: 4;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .text-description,
+  .description {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

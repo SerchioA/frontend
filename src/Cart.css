@@ -1,0 +1,88 @@
+.cartModal {
+  position: fixed;
+  top: 3.75rem;
+  right: 11.875rem;
+  width: 28.125rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  z-index: 1000;
+}
+
+.cart-image {
+  width: 4.375rem;
+  height: 4.375rem;
+}
+.cart-name {
+  position: relative;
+  font-size: 0.938;
+}
+.empty-cart {
+  text-align: center;
+  font-size: 1.875rem;
+}
+.delete-from-cart {
+  position: relative;
+  float: right;
+  background: none;
+  margin: 0.5rem;
+  top: -1.875rem;
+  cursor: pointer;
+  border: none;
+  color: red;
+}
+
+.total {
+  margin: 0.5rem;
+}
+
+.total-price {
+  font-size: 1.875rem;
+  margin: 0;
+  width: 12.5rem;
+}
+
+.purchase-button {
+  color: #676767;
+  background-color: tomato;
+  position: relative;
+  float: right;
+  font-size: 1.875rem;
+  top: -2.188rem;
+  cursor: pointer;
+  outline: 0;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 3px;
+  color: #000;
+  background: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.purchase-button:hover {
+  color: #fff;
+  background: #2c3138;
+}
+
+.cart-item {
+  padding: 0.313rem;
+  border: 2px solid black;
+  list-style-type: none;
+  margin: 0.313rem;
+}
+
+@media (max-width: 768px) {
+  .cartModal {
+    width: 20.125rem;
+    right: 0;
+  }
+}
