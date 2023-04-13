@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import ListOfProducts from "./ListOfProducts";
+import "./ChooseByCategory.css";
 
 const ChooseByCategory = ({
   products,
